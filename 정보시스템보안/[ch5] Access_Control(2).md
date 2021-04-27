@@ -12,8 +12,8 @@ DAC, RBAC, ABAC에 대하여 더 자세히 알아보기-
 4) **Authorization table***
 
 ### *1) Access matrix*
+![Untitled](https://user-images.githubusercontent.com/61778930/116212042-6610e300-a77f-11eb-8adf-8fee7764a123.png)
 
-![5-Access_Control-(2)%20d51d3d030a2f4afbb0d8c4c8d32f53a9/Untitled.png](5-Access_Control-(2)%20d51d3d030a2f4afbb0d8c4c8d32f53a9/Untitled.png)
 
 - **단점**
 
@@ -22,8 +22,7 @@ User A의 File 2에 대한 권한은 none.
 —> empty 발생 (불필요한 메모리 점유)
 
 ### 2) ***ACL** (Access Control List)*
-
-![5-Access_Control-(2)%20d51d3d030a2f4afbb0d8c4c8d32f53a9/Untitled%201.png](5-Access_Control-(2)%20d51d3d030a2f4afbb0d8c4c8d32f53a9/Untitled%201.png)
+![Untitled 1](https://user-images.githubusercontent.com/61778930/116212072-6c06c400-a77f-11eb-8ba0-9c90ea4f69ce.png)
 
 ; column별(File)로 나누어서 리스트업
 
@@ -45,8 +44,7 @@ subject (유저) / 권한 / object(파일) 로 테이블 만들기
 
 - sort 가능
 - 위의 장단점 해결
-
-![5-Access_Control-(2)%20d51d3d030a2f4afbb0d8c4c8d32f53a9/Untitled%202.png](5-Access_Control-(2)%20d51d3d030a2f4afbb0d8c4c8d32f53a9/Untitled%202.png)
+![Untitled 2](https://user-images.githubusercontent.com/61778930/116212119-7759ef80-a77f-11eb-93c0-dec3fba28bbe.png)
 
 ---
 
@@ -60,8 +58,7 @@ subject (유저) / 권한 / object(파일) 로 테이블 만들기
 - **Subjects**
 
 *— 매트릭스로 나타내기*
-
-![5-Access_Control-(2)%20d51d3d030a2f4afbb0d8c4c8d32f53a9/Untitled%203.png](5-Access_Control-(2)%20d51d3d030a2f4afbb0d8c4c8d32f53a9/Untitled%203.png)
+![Untitled 3](https://user-images.githubusercontent.com/61778930/116212167-82ad1b00-a77f-11eb-8e82-a0616daf97f7.png)
 
 ### Access control system commands
 
@@ -73,8 +70,7 @@ subject (유저) / 권한 / object(파일) 로 테이블 만들기
 
 - **copy flag**
 - 다양한 commands 정리
-
-![5-Access_Control-(2)%20d51d3d030a2f4afbb0d8c4c8d32f53a9/Untitled%204.png](5-Access_Control-(2)%20d51d3d030a2f4afbb0d8c4c8d32f53a9/Untitled%204.png)
+![Untitled 4](https://user-images.githubusercontent.com/61778930/116212182-86d93880-a77f-11eb-9cea-1a6de5517c8d.png)
 
 ### Protection domain
 
@@ -83,8 +79,7 @@ subject (유저) / 권한 / object(파일) 로 테이블 만들기
 ## UNIX file access control
 
 — inode 이용하여 10 bits를 access control에 사용한다 (ex. mode 644 )
-
-![5-Access_Control-(2)%20d51d3d030a2f4afbb0d8c4c8d32f53a9/Untitled%205.png](5-Access_Control-(2)%20d51d3d030a2f4afbb0d8c4c8d32f53a9/Untitled%205.png)
+![Untitled 5](https://user-images.githubusercontent.com/61778930/116212200-8b9dec80-a77f-11eb-9bb4-42ba352e6329.png)
 
 ### For directory
 
@@ -95,8 +90,7 @@ subject (유저) / 권한 / object(파일) 로 테이블 만들기
 ⇒ 해당 파일에 권한이 없어도, 상위 디렉토리에 권한이 있으면 위와 같은 권한으로 접근 가능! 하다는 점 기억
 
 ### remaining 3 bits... (특수 권한)
-
-![5-Access_Control-(2)%20d51d3d030a2f4afbb0d8c4c8d32f53a9/Untitled%206.png](5-Access_Control-(2)%20d51d3d030a2f4afbb0d8c4c8d32f53a9/Untitled%206.png)
+![Untitled 6](https://user-images.githubusercontent.com/61778930/116212248-9b1d3580-a77f-11eb-9cf7-ebdb6219f340.png)
 
 ### 1) **SetUID (4)**
 
@@ -107,8 +101,7 @@ subject (유저) / 권한 / object(파일) 로 테이블 만들기
 : root 권한이 필요없는 프로그램에도 setUID 권한을 남발하면, root가 아닌 사용자가 권한을 부여하게 될 수 있음 → **권한 상승 우려** 때문에 setuid는 최소화해야 함.   
 
 *ex.*
-
-![5-Access_Control-(2)%20d51d3d030a2f4afbb0d8c4c8d32f53a9/Untitled%207.png](5-Access_Control-(2)%20d51d3d030a2f4afbb0d8c4c8d32f53a9/Untitled%207.png)
+![Untitled 7](https://user-images.githubusercontent.com/61778930/116212355-b38d5000-a77f-11eb-9553-19efbb2bff2c.png)
 
 `**-rwsr-xr-x 1 root root`** 에서    
 
@@ -117,8 +110,8 @@ subject (유저) / 권한 / object(파일) 로 테이블 만들기
 **root** → 소유자는 root   
 
 — 자동으로 passwd 변경 시 setuid 사라지는 예시 **↓**    
+![Untitled 8](https://user-images.githubusercontent.com/61778930/116212276-a07a8000-a77f-11eb-840f-225727e2482e.png)
 
-![5-Access_Control-(2)%20d51d3d030a2f4afbb0d8c4c8d32f53a9/Untitled%208.png](5-Access_Control-(2)%20d51d3d030a2f4afbb0d8c4c8d32f53a9/Untitled%208.png)
 
 일반 사용자 계정으로 패스워드 변경(execute) → 변경 후 다른 디렉토리 ( /shadow 또는 /passwd 등)에 접근 할 수 없게 됨    
 자동으로 passwd 변경 시 setuid 사라진다.   
@@ -127,8 +120,8 @@ subject (유저) / 권한 / object(파일) 로 테이블 만들기
 
 setuid는 디렉토리에 권한 부여 불가,    
 **setGID는 가능하다**는 내용 → 권한 부여 후 새로 생긴 파일들에 대해서만 그룹이 권한 부여 받음
+![Untitled 9](https://user-images.githubusercontent.com/61778930/116212423-c56ef300-a77f-11eb-9c95-6ea970f1547f.png)
 
-![5-Access_Control-(2)%20d51d3d030a2f4afbb0d8c4c8d32f53a9/Untitled%209.png](5-Access_Control-(2)%20d51d3d030a2f4afbb0d8c4c8d32f53a9/Untitled%209.png)
 
 ### 3) **'sticky bit' (1)**
 
@@ -140,20 +133,18 @@ sticky bit을 디렉토리에 적용 시 —
 # 2. RBAC
 
 ### RBAC model
+![Untitled 10](https://user-images.githubusercontent.com/61778930/116212451-cd2e9780-a77f-11eb-902a-0ba3d31af60a.png)
 
-![5-Access_Control-(2)%20d51d3d030a2f4afbb0d8c4c8d32f53a9/Untitled%2010.png](5-Access_Control-(2)%20d51d3d030a2f4afbb0d8c4c8d32f53a9/Untitled%2010.png)
 
 ### Role의 계층 구조
-
-![5-Access_Control-(2)%20d51d3d030a2f4afbb0d8c4c8d32f53a9/Untitled%2011.png](5-Access_Control-(2)%20d51d3d030a2f4afbb0d8c4c8d32f53a9/Untitled%2011.png)
+![Untitled 11](https://user-images.githubusercontent.com/61778930/116212462-cf90f180-a77f-11eb-962c-bb3854740585.png)
 
 ### 표현 예시
 
 B가 A에 대한 권한 가지는 경우 → 아래 두번째 그림처럼 Access Right을 생략하여 표현 가능
+![Untitled 12](https://user-images.githubusercontent.com/61778930/116212516-de77a400-a77f-11eb-9cca-08dfe5eec0df.png)
+![Untitled 13](https://user-images.githubusercontent.com/61778930/116212525-e1729480-a77f-11eb-8837-6610809cad76.png)
 
-![5-Access_Control-(2)%20d51d3d030a2f4afbb0d8c4c8d32f53a9/Untitled%2012.png](5-Access_Control-(2)%20d51d3d030a2f4afbb0d8c4c8d32f53a9/Untitled%2012.png)
-
-![5-Access_Control-(2)%20d51d3d030a2f4afbb0d8c4c8d32f53a9/Untitled%2013.png](5-Access_Control-(2)%20d51d3d030a2f4afbb0d8c4c8d32f53a9/Untitled%2013.png)
 
 # 3. ABAC
 
@@ -169,8 +160,8 @@ B가 A에 대한 권한 가지는 경우 → 아래 두번째 그림처럼 Acces
 - **Subject** attributes
 - **Object** attributes
 - **Environment** attributes (!)
+![Untitled 14](https://user-images.githubusercontent.com/61778930/116212547-e6cfdf00-a77f-11eb-8276-fa400375d5c3.png)
 
-![5-Access_Control-(2)%20d51d3d030a2f4afbb0d8c4c8d32f53a9/Untitled%2014.png](5-Access_Control-(2)%20d51d3d030a2f4afbb0d8c4c8d32f53a9/Untitled%2014.png)
 
 ### ABAC policies
 
@@ -182,8 +173,8 @@ B가 A에 대한 권한 가지는 경우 → 아래 두번째 그림처럼 Acces
 ### ABAC policy model
 
 — 예시   
+![Untitled 15](https://user-images.githubusercontent.com/61778930/116212568-e9cacf80-a77f-11eb-856a-51e4bfb91e1f.png)
 
-![5-Access_Control-(2)%20d51d3d030a2f4afbb0d8c4c8d32f53a9/Untitled%2015.png](5-Access_Control-(2)%20d51d3d030a2f4afbb0d8c4c8d32f53a9/Untitled%2015.png)
 
 ### 장단점
 
