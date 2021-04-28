@@ -30,12 +30,11 @@
 - 
 
 ### Hashed and Salted passwords 방법
-
-![3-Password%209a6e1706d5354f9286d4d3188da4b662/Untitled.png](3-Password%209a6e1706d5354f9286d4d3188da4b662/Untitled.png)
+![Untitled](https://user-images.githubusercontent.com/61778930/116435145-05200280-a886-11eb-8390-4f8997305fc2.png)
 
 password file: ***(id, salt, h)*** 쌍으로 저장   ※pw 자체는 저장하지 않는다!!!    
+![Untitled 1](https://user-images.githubusercontent.com/61778930/116435170-094c2000-a886-11eb-8310-926a69d62261.png)
 
-![3-Password%209a6e1706d5354f9286d4d3188da4b662/Untitled%201.png](3-Password%209a6e1706d5354f9286d4d3188da4b662/Untitled%201.png)
 
 사용자의 pw 입력값에 1)salt 붙이고    
 
@@ -90,20 +89,18 @@ P = 1/2^n = 2^(-n)
 **3)** entropy 정의하기   
 
 ;모든 일어날 수 있는 사건에 대한 (확률 × 정보량) 값을 합친 것   
-
-![3-Password%209a6e1706d5354f9286d4d3188da4b662/Untitled%202.png](3-Password%209a6e1706d5354f9286d4d3188da4b662/Untitled%202.png)
+![Untitled 2](https://user-images.githubusercontent.com/61778930/116435218-16690f00-a886-11eb-9583-634d6f8dc856.png)
 
 참고
+![Untitled 3](https://user-images.githubusercontent.com/61778930/116435312-2ed92980-a886-11eb-9532-37701afeeced.png)
 
-![3-Password%209a6e1706d5354f9286d4d3188da4b662/Untitled%203.png](3-Password%209a6e1706d5354f9286d4d3188da4b662/Untitled%203.png)
 
 ## Min-entropy
 
 = guessing entropy
+![Untitled 4](https://user-images.githubusercontent.com/61778930/116435327-33054700-a886-11eb-8bf0-e92eda80b0f7.png)
+![Untitled 5](https://user-images.githubusercontent.com/61778930/116435338-34367400-a886-11eb-9282-010195e93b36.png)
 
-![3-Password%209a6e1706d5354f9286d4d3188da4b662/Untitled%204.png](3-Password%209a6e1706d5354f9286d4d3188da4b662/Untitled%204.png)
-
-![3-Password%209a6e1706d5354f9286d4d3188da4b662/Untitled%205.png](3-Password%209a6e1706d5354f9286d4d3188da4b662/Untitled%205.png)
 
 ## Password와 Entropy 사이 관계
 
@@ -169,22 +166,17 @@ input B 들어왔을 때, B도 동일한 방식으로 해싱
 ⇒ k개의 해시 계산이 병렬적으로 수행될 수 있다면 속도측면에서 큰 이점을 얻을 수 있다!   
 
 **※** 정확도는 떨어짐- ****hash collision 때문에 ***False positive*** 발생 가능   
-
-![3-Password%209a6e1706d5354f9286d4d3188da4b662/Untitled%206.png](3-Password%209a6e1706d5354f9286d4d3188da4b662/Untitled%206.png)
+![Untitled 6](https://user-images.githubusercontent.com/61778930/116443368-88dded00-a88e-11eb-9eab-28c3fe9608dd.png)
 
 [Bloom Filter 실습 사이트](https://llimllib.github.io/bloomfilter-tutorial/)
-
-![3-Password%209a6e1706d5354f9286d4d3188da4b662/Untitled%207.png](3-Password%209a6e1706d5354f9286d4d3188da4b662/Untitled%207.png)
+![Untitled 7](https://user-images.githubusercontent.com/61778930/116443392-8e3b3780-a88e-11eb-8f2d-4526d2fb4950.png)
 
 ### Error rate 줄이는 방법
-
-![3-Password%209a6e1706d5354f9286d4d3188da4b662/Untitled%208.png](3-Password%209a6e1706d5354f9286d4d3188da4b662/Untitled%208.png)
+![Untitled 8](https://user-images.githubusercontent.com/61778930/116443405-909d9180-a88e-11eb-8e56-05e2bb02cf05.png)
 
 1. **k** 늘리기 (해시함수 개수 **많이**)
 2. **N/d** : 딕셔너리 크기(d)에 따른 해시테이블 사이즈(N)
-
-![3-Password%209a6e1706d5354f9286d4d3188da4b662/Untitled%209.png](3-Password%209a6e1706d5354f9286d4d3188da4b662/Untitled%209.png)
+![Untitled 9](https://user-images.githubusercontent.com/61778930/116443432-9c895380-a88e-11eb-9bea-eabf8d4ade38.png)
 
 ## Renewing passwords
-
-![3-Password%209a6e1706d5354f9286d4d3188da4b662/Untitled%2010.png](3-Password%209a6e1706d5354f9286d4d3188da4b662/Untitled%2010.png)
+![Untitled 10](https://user-images.githubusercontent.com/61778930/116443444-a01cda80-a88e-11eb-9952-4649de3aae5d.png)
