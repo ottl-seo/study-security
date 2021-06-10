@@ -1,7 +1,7 @@
 # study-security
 ### 2021-1 
 - <a href="/정보시스템보안">정보시스템보안</a>   
-- <a href="https://github.com/ottl-seo/biometric-security">생체인증보안</a>   
+- <a href="https://github.com/ottl-seo/ai-practice">생체인증보안</a>   
 - <a href="/디지털포렌식스">디지털포렌식스</a>   
     
 ### 2020-2 
