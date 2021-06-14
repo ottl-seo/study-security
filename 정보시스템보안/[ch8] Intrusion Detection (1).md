@@ -1,5 +1,4 @@
 ## 1. Intruder란?
-
 hacker or cracker를 포함하여, 보안을 위협하는 이들   
 
 ### Intruder 분류
