@@ -89,10 +89,12 @@ hacker or cracker를 포함하여, 보안을 위협하는 이들
 **3) UI** (User Interface)- 사용자가 시스템의 행동을 볼 수 있게..    
 
 ### IDS의 Types
-
-1. **HIDS** (Host-based IDS): single host를 모니터링    
-2. **NIDS** (Network-based IDS): 네트워크 위주로 모니터링- network traffic, analyzes network, transport, ....    
-3. **Distributed or hybrid IDS**: 여러 개의 sensor를 중앙 analyzer에 결합시킴
+#### 1. **HIDS** (Host-based IDS)
+: single host를 모니터링    
+#### 2. **NIDS** (Network-based IDS)
+: 네트워크 위주로 모니터링- network traffic, analyzes network, transport, ....    
+#### 3. **Distributed or hybrid IDS**
+: 여러 개의 sensor를 중앙 analyzer에 결합시킴
 
 ### IDS의 필요성
 
