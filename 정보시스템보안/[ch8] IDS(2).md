@@ -105,16 +105,14 @@ MAC(P) = 타우p 로 저장함으로써 DB화!!!
 → zero-day attacks에 약하다     
 
 ### ✔ Distributed (H)IDS
-
-![%5Bch8%5D%20Intrusion%20Detection%20(2)%202b4b8e4b3736442cbd6345c2163bb7cf/Untitled.png](%5Bch8%5D%20Intrusion%20Detection%20(2)%202b4b8e4b3736442cbd6345c2163bb7cf/Untitled.png)
+![Untitled](https://user-images.githubusercontent.com/61778930/122236284-58631880-cef9-11eb-8004-4c22dc596795.png)
 
 [고려해야할 사항]   
 
 - Data exchange → 각각 다른 환경에서 다른 센서로 들어온 데이터가 교환된다
 - 네트워크 transmission 하는 동안 **Sensor를 보호**해야 한다
 - **중앙화 여부**
-
-![%5Bch8%5D%20Intrusion%20Detection%20(2)%202b4b8e4b3736442cbd6345c2163bb7cf/Untitled%201.png](%5Bch8%5D%20Intrusion%20Detection%20(2)%202b4b8e4b3736442cbd6345c2163bb7cf/Untitled%201.png)
+![Untitled 1](https://user-images.githubusercontent.com/61778930/122236301-5c8f3600-cef9-11eb-997e-660150e536fd.png)
 
 ⇒ 네모가 각각 센서...   
 
@@ -131,8 +129,8 @@ MAC(P) = 타우p 로 저장함으로써 DB화!!!
 **1) Inline sensor**
 
 - 트래픽은 무조건 sensor를 거쳐야 한다 (***Inserted into a network segment***)
-
-![%5Bch8%5D%20Intrusion%20Detection%20(2)%202b4b8e4b3736442cbd6345c2163bb7cf/Untitled%202.png](%5Bch8%5D%20Intrusion%20Detection%20(2)%202b4b8e4b3736442cbd6345c2163bb7cf/Untitled%202.png)
+- 
+![Untitled 2](https://user-images.githubusercontent.com/61778930/122236327-631dad80-cef9-11eb-9542-91e69305b09c.png)
 
 ↑ 이렇게 생김
 
@@ -145,18 +143,16 @@ MAC(P) = 타우p 로 저장함으로써 DB화!!!
 - 네트워크 트래픽 복사본을 모니터링    
 → No packet delay   
 → No IP 주소
-- 분리된 인터페이스
-
-![%5Bch8%5D%20Intrusion%20Detection%20(2)%202b4b8e4b3736442cbd6345c2163bb7cf/Untitled%203.png](%5Bch8%5D%20Intrusion%20Detection%20(2)%202b4b8e4b3736442cbd6345c2163bb7cf/Untitled%203.png)
+- 분리된 인터페이스   
+![Untitled 3](https://user-images.githubusercontent.com/61778930/122236353-6a44bb80-cef9-11eb-8714-241f87cbeae5.png)
 
 ### Network 센서에 대하여
-
-![%5Bch8%5D%20Intrusion%20Detection%20(2)%202b4b8e4b3736442cbd6345c2163bb7cf/Untitled%204.png](%5Bch8%5D%20Intrusion%20Detection%20(2)%202b4b8e4b3736442cbd6345c2163bb7cf/Untitled%204.png)
+![Untitled 4](https://user-images.githubusercontent.com/61778930/122236382-6fa20600-cef9-11eb-8859-747ac900804a.png)
 
 - Wired or Wireless → Wireless로 연결되어있으면 그 NIDS는 inline이다.
 - WIDS란? : wireness network에 초점을 맞춘 NIDS
+![Untitled 5](https://user-images.githubusercontent.com/61778930/122236413-74ff5080-cef9-11eb-8a2f-ec6e29657d87.png)
 
-![%5Bch8%5D%20Intrusion%20Detection%20(2)%202b4b8e4b3736442cbd6345c2163bb7cf/Untitled%205.png](%5Bch8%5D%20Intrusion%20Detection%20(2)%202b4b8e4b3736442cbd6345c2163bb7cf/Untitled%205.png)
 
 #### [**1**]번 위치
 
