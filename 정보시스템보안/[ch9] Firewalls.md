@@ -36,8 +36,8 @@
 - 이미 감염된 laptop, 스마트 디바이스, usb 장치 등...
 
 # Overview
+![Untitled](https://user-images.githubusercontent.com/61778930/122396792-5198dc00-cfb3-11eb-89c4-55e4a008053c.png)
 
-![Firewalls%2092e66ad08bc240eb9e2b94b486ffde98/Untitled.png](Firewalls%2092e66ad08bc240eb9e2b94b486ffde98/Untitled.png)
 
 - 네트워크 트래픽 감시→ low-level 네트워크 패킷부터 application 프로토콜까지
 - **Positive filter**: 일정 기준을 충족하는 패킷만 pass를 허락한다
@@ -52,7 +52,7 @@
 
 ## 1) Packet filtering firewall
 
-![Firewalls%2092e66ad08bc240eb9e2b94b486ffde98/Untitled%201.png](Firewalls%2092e66ad08bc240eb9e2b94b486ffde98/Untitled%201.png)
+![Untitled 1](https://user-images.githubusercontent.com/61778930/122396808-565d9000-cfb3-11eb-8d0a-fec38cdd8283.png)
 
 - incoming or outgoing IP 패킷 각각을 규칙에 따라 허락하거나 거절함
 
@@ -90,7 +90,7 @@
 - 외부 소스에 보내지는 outbound mail과 그에 대한 response
 - Default policy는 특별히 작성된 것
 
-    ![Firewalls%2092e66ad08bc240eb9e2b94b486ffde98/Untitled%202.png](Firewalls%2092e66ad08bc240eb9e2b94b486ffde98/Untitled%202.png)
+![Untitled 2](https://user-images.githubusercontent.com/61778930/122396844-5f4e6180-cfb3-11eb-9407-f37d1fb08c8b.png)
 
 ✔ **Problem**: 4번째 rule의 경우, 1023 이상의 포트로 향하는 external 트래픽은 항상 허용되어야 한다는 문제 발생 → 외부의 트래픽 공격이 들어올 수 있음     
 
@@ -105,7 +105,7 @@
 
 **⇒ 이에 대한 solution: ACK flag** 를 이용하는 방법이 있다 → SMTP에 대한 응답만을 허용
 
-![Firewalls%2092e66ad08bc240eb9e2b94b486ffde98/Untitled%203.png](Firewalls%2092e66ad08bc240eb9e2b94b486ffde98/Untitled%203.png)
+![Untitled 3](https://user-images.githubusercontent.com/61778930/122396866-64131580-cfb3-11eb-91c6-05f0edd31003.png)
 
 ### -장점
 
@@ -148,11 +148,11 @@
 
 BUT, TCP connection 정보가 **저장**되고, filtering이 이를 나타낼 수 있다.   
 
-![Firewalls%2092e66ad08bc240eb9e2b94b486ffde98/Untitled%204.png](Firewalls%2092e66ad08bc240eb9e2b94b486ffde98/Untitled%204.png)
+![Untitled 4](https://user-images.githubusercontent.com/61778930/122396913-6ecdaa80-cfb3-11eb-880d-3b95b450a760.png)
 
 ### -Example
 
-![Firewalls%2092e66ad08bc240eb9e2b94b486ffde98/Untitled%205.png](Firewalls%2092e66ad08bc240eb9e2b94b486ffde98/Untitled%205.png)
+![Untitled 5](https://user-images.githubusercontent.com/61778930/122396930-72613180-cfb3-11eb-8967-e9fdc61d8fd1.png)
 
 - **'TCP connection'**은 주로, 1024이하의 포트 ↔ [1024,65535] 사이의 포트 사이의 connection이다.
 
@@ -166,7 +166,7 @@ BUT, TCP connection 정보가 **저장**되고, filtering이 이를 나타낼 �
 
 **== application proxy** 라고도 불린다.   
 
-![Firewalls%2092e66ad08bc240eb9e2b94b486ffde98/Untitled%206.png](Firewalls%2092e66ad08bc240eb9e2b94b486ffde98/Untitled%206.png)
+![Untitled 6](https://user-images.githubusercontent.com/61778930/122396954-75f4b880-cfb3-11eb-9a3a-d07864ed3aed.png)
 
 → telnet, FTP 등 프로토콜을 위한 application-level의 traffic 릴레이   
 
@@ -187,7 +187,7 @@ BUT, TCP connection 정보가 **저장**되고, filtering이 이를 나타낼 �
 
 **== circuit-level proxy** 라고도 불린다.   
 
-![Firewalls%2092e66ad08bc240eb9e2b94b486ffde98/Untitled%207.png](Firewalls%2092e66ad08bc240eb9e2b94b486ffde98/Untitled%207.png)
+![Untitled 7](https://user-images.githubusercontent.com/61778930/122396976-7ab96c80-cfb3-11eb-80d4-6d84d771894f.png)
 
 - 두 TCP connection을 설정한다 → user와 gateway, gateway와 remote host간의 연결
 
