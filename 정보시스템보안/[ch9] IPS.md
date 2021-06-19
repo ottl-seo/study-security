@@ -49,7 +49,7 @@ Inline NIDS와 비슷한데, **패킷을 수정/삭제**할 수 있는 권한을
 
 # → Digital immune system
 
-![%5Bch9%5D%20IPS%203a820b2685ac4d1695a9585cd6c580ba/Untitled.png](%5Bch9%5D%20IPS%203a820b2685ac4d1695a9585cd6c580ba/Untitled.png)
+![Untitled](https://user-images.githubusercontent.com/61778930/122644348-bc7f1a00-d14f-11eb-853e-bd691bc725d4.png)
 
 - **Sensor**는 잠재적 악성코드 Scanning, 감염, 수행 행위를 **탐지**한다.
 - Sensor는 탐지된 악성코드의 **복사본**을 **'Correlation server'에 보낸다.**
