@@ -24,7 +24,7 @@ Heartbeat 프로토콜의 Bug에 해당하는 공격
 - OpenSSL 라이브러리가 메시지의 **length**는 verify하지 않는다는 점을 이용
 - "Buffer over-read"
 
-![%5Bch11%5D%20Software%20Security%20ebb120aa87794f6c9a37e6843b9a92b1/Untitled.png](%5Bch11%5D%20Software%20Security%20ebb120aa87794f6c9a37e6843b9a92b1/Untitled.png)
+![Untitled](https://user-images.githubusercontent.com/61778930/122783551-a195dc80-d2ec-11eb-9f15-1f23fd880df9.png)
 
 # Injection attacks
 
